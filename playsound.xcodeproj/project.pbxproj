@@ -15,7 +15,6 @@
 		54E4544A22F8EB80005A265D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E4544822F8EB80005A265D /* Main.storyboard */; };
 		54E4544C22F8EB81005A265D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54E4544B22F8EB81005A265D /* Assets.xcassets */; };
 		54E4544F22F8EB81005A265D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E4544D22F8EB81005A265D /* LaunchScreen.storyboard */; };
-		54E4545D22F8F1C1005A265D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E4545C22F8F1C1005A265D /* AVFoundation.framework */; };
 		54E4547722FB67A7005A265D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4547622FB67A7005A265D /* FirstViewController.swift */; };
 		54E4548222FC9A4E005A265D /* 4000Hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 54E4547822FC9A4E005A265D /* 4000Hz.wav */; };
 		54E4548322FC9A4E005A265D /* 500Hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 54E4547922FC9A4E005A265D /* 500Hz.wav */; };
@@ -29,8 +28,10 @@
 		54E4548B22FC9A4E005A265D /* 8000Hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 54E4548122FC9A4E005A265D /* 8000Hz.wav */; };
 		54E4548D22FDDD2E005A265D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4548C22FDDD2E005A265D /* TestViewController.swift */; };
 		54FCD6732305EDD800F4F01E /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FCD6722305EDD800F4F01E /* NewViewController.swift */; };
-		705C2BF037E81211F0AD2A83 /* Pods_playsound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0070420E2EF156981F923A6C /* Pods_playsound.framework */; };
 		83C1E96F233A9AF600D81D0C /* whit_noise.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83C1E96E233A9AF600D81D0C /* whit_noise.wav */; };
+		A0741D0C240064F50071836D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E4545C22F8F1C1005A265D /* AVFoundation.framework */; };
+		A0741D0F240064F70071836D /* Pods_playsound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0070420E2EF156981F923A6C /* Pods_playsound.framework */; };
+		A0741D1124006C380071836D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E4545C22F8F1C1005A265D /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,8 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54E4545D22F8F1C1005A265D /* AVFoundation.framework in Frameworks */,
-				705C2BF037E81211F0AD2A83 /* Pods_playsound.framework in Frameworks */,
+				A0741D0F240064F70071836D /* Pods_playsound.framework in Frameworks */,
+				A0741D0C240064F50071836D /* AVFoundation.framework in Frameworks */,
+				A0741D1124006C380071836D /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +448,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "cpp.playsound-personal";
+				PRODUCT_BUNDLE_IDENTIFIER = cpp.HIT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -465,7 +467,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "cpp.playsound-personal";
+				PRODUCT_BUNDLE_IDENTIFIER = cpp.HIT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

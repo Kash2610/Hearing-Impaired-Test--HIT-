@@ -31,8 +31,8 @@ class TestViewController: UIViewController, AVAudioRecorderDelegate
     var recordingSession : AVAudioSession!
     var leftdBHL:[Int] = []
     var rightdBHL :[Int] = []
-    var audioPlayer = AVAudioPlayer()
-    var audioPlayer_Masking = AVAudioPlayer()
+    var audioPlayer: AVAudioPlayer!
+    var audioPlayer_Masking : AVAudioPlayer!
     var Index_Hz:Int = 0
     let array1 = NSMutableArray(array: [hz250, hz500,hz1000,hz1500, hz2000,hz3000, hz4000,hz6000,hz8000])
     var dBSPL_MAX : [Float] =   [102.6,102.7,106.4,110.0,112.2,120.1,119.1,120.0,112.7]
@@ -172,10 +172,12 @@ class TestViewController: UIViewController, AVAudioRecorderDelegate
     
     func onStart(){
         do{
-            audioPlayer = try AVAudioPlayer(contentsOf: array1[0] as! URL)
+            print(array1[0])
+            audioPlayer = try AVAudioPlayer(contentsOf: array1[0] as! URL, fileTypeHint: AVFileType.wav.rawValue)
             playsound()
             audioPlayer_Masking = try AVAudioPlayer(contentsOf: whiteNoise as URL)
         }catch{
+            print("Error locating file to play")
         }
     }
     
